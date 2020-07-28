@@ -2,9 +2,8 @@
 import cv2
 from pathlib import Path
 
-
-data_path = Path("C:\\Users\\nazbi\\OneDrive\\Desktop\\speedchallenge\\data")
-PATH = data_path / "train.mp4"
+data_path = 'data/'
+PATH = data_path + "train.mp4"
 vidcap = cv2.VideoCapture(str(PATH))
 success, image = vidcap.read()
 
